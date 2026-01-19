@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "775926ecad76cec0",
+    "type": "split",
+    "children": [
+      {
+        "id": "78800fcdb539bb88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9477de4038312d1a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e4e34201204f3d4f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b599751c5057c137",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18203482ad58a41c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4dadac7148a688f7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "87eeb723e527d3b9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "8ef6721a76420707",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a3e1a22df79551d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "925007da9e497c90",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ProjetPF.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ProjetPF"
+            }
+          },
+          {
+            "id": "aeefff70b77c10de",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ProjetPF.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ProjetPF"
+            }
+          },
+          {
+            "id": "a19cd0779e9d12b3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7efa20a65f7cb4a0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ProjetPF.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of ProjetPF"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9477de4038312d1a",
+  "lastOpenFiles": [
+    "dependances.canvas",
+    "classes/game.md",
+    "classes/physic.md",
+    "classes/input.md",
+    "classes/geometry.md",
+    "acceuil.md",
+    "classes/main.md",
+    "classes/color.md",
+    "sujet.pdf",
+    "flot_de_donnee.canvas",
+    "classes/shape.md",
+    "classes"
+  ]
+}
