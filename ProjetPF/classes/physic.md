@@ -2,15 +2,20 @@
 - [x] Interface
 - [ ] Contrat exact des cas d'erreur de Physic
 - [ ] Implantation de Physic avec : `type ('t * 'a) pool = ('t body * 'a) list`
-- [ ] Test unitaire 
+- [ ] Test unitaire : cas critique
+	- [ ] collision multiple : annulé le dernier mouvement fait
+	- [ ] rebond selon la face touché
+	- [ ] rebond sur le coin
+	- [ ] rebond sur un objet physique => rebond symétrique
 - [ ] Implantation de Physic avec : `type ('t * 'a) pool = ('t body * 'a) tree`
 ## INTERFACE
 ```ocaml
 open Geometry
 module type Physic (V : Vector) =
 sig
-	(* élément physique de la scene : forme * position * vitesse * accélération *)
-	type _ body = (Shape.t * V.t * V.t * V.t) (* public *)
+	(* élément physique de la scene :
+	 * forme, position, vitesse, accélération, peu rebondir *)
+	type _ body = (Shape.t * V.t * V.t * V.t * bool) (* public *)
 	(* ensemble de paire (élément physique, obj 'a) *)
 	type (_ * 'a) pool
 	(* type fantome destiné au typage de body *)
@@ -41,7 +46,7 @@ sig
 	 *   liste des collisions aillant eu lieu *
 	 *   liste des objets ayant subi une collision) *)
 	val update : (dyna * 'a) pool -> (stat * 'a) pool -> float
-		-> ((dyna * 'a) pool * int list * 'a list)
+		-> ((dyna * 'a) pool * int list * 'a list * int list * 'a list)
 	
 	(* Appel une fonction sur chaque body d'une pool *)
 	val iter : ('t * 'a) pool -> ('t body -> 'a -> unit) -> unit
